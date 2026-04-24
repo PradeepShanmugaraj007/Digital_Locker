@@ -1,0 +1,13 @@
+filebeat.inputs:
+  - type: log
+    enabled: true
+    paths:
+      - /app/logs/*.log
+    json.keys_under_root: true
+    json.add_error_key: true
+    tags: ["django", "digital-locker"]
+
+output.logstash:
+  hosts: ["logstash:5000"]
+
+logging.level: warning
