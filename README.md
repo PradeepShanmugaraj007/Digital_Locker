@@ -462,5 +462,3 @@ Application logs are also written locally to `logs/app.log` in JSON format for F
 - Change `DJANGO_SECRET_KEY` before any deployment
 - Set `DJANGO_DEBUG=False` in production
 - Use `config/settings/production.py` which enforces HTTPS, HSTS, and secure cookies
-#   D i g i t a l _ L o c k e r  
- 
